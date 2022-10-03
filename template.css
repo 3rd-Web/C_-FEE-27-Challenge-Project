@@ -1,0 +1,20 @@
+/* Color Theme Swatches in Hex */
+.Premier-League-1-hex { color: #F2055C; }
+.Premier-League-2-hex { color: #340040; }
+.Premier-League-3-hex { color: #07F2F2; }
+.Premier-League-4-hex { color: #05F26C; }
+.Premier-League-5-hex { color: #EAF205; }
+
+/* Color Theme Swatches in RGBA */
+.Premier-League-1-rgba { color: rgba(242, 4, 91, 1); }
+.Premier-League-2-rgba { color: rgba(52, 0, 63, 1); }
+.Premier-League-3-rgba { color: rgba(7, 242, 242, 1); }
+.Premier-League-4-rgba { color: rgba(4, 242, 107, 1); }
+.Premier-League-5-rgba { color: rgba(233, 242, 4, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Premier-League-1-hsla { color: hsla(337, 95, 48, 1); }
+.Premier-League-2-hsla { color: hsla(288, 100, 12, 1); }
+.Premier-League-3-hsla { color: hsla(180, 94, 48, 1); }
+.Premier-League-4-hsla { color: hsla(146, 95, 48, 1); }
+.Premier-League-5-hsla { color: hsla(62, 95, 48, 1); }

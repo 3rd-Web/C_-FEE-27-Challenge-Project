@@ -1,0 +1,82 @@
+/* universal  */
+
+html {
+    font-size: 16px;
+    font-family: 'Arsenal', sans-serif;
+}
+
+/* header and nav  */
+
+header {
+  background-color: #340040;
+}
+
+header .container {
+  display: flex;
+  font-size: 2.75rem;
+  font-family: 'Rajdhani', sans-serif;
+  width: 100%;
+  justify-content: space-around;
+}
+
+header img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+}
+
+header .nav {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+header .nav a {
+    text-decoration: none;
+    word-spacing: .5rem;
+    letter-spacing: .1rem;
+}
+
+header .nav a:hover {
+    color: #EAF205;
+}
+
+.nav-left {
+    position: relative;
+}
+
+.nav-left a {
+    color: #07F2F2; 
+}
+
+.nav-right {
+    position: relative;
+}
+
+.nav-right a {
+    color: #F2055C;
+}
+
+.hero {
+    background-color: #05F26C;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .icon img {
+    width: 300px;
+}
+
+.hero span {
+    text-decoration: underline;
+}
+
+
+/* events  */
+
+.pix img {
+    width: 300px;
+    height: 500px;
+    opacity: .8;
+    border-radius: 15px;
+}
