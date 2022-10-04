@@ -1,8 +1,12 @@
 /* universal  */
 
-html {
-    font-size: 16px;
-    font-family: 'Arsenal', sans-serif;
+main {
+  font-family: "Arsenal", sans-serif;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 /* header and nav  */
@@ -14,7 +18,7 @@ header {
 header .container {
   display: flex;
   font-size: 2.75rem;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   width: 100%;
   justify-content: space-around;
 }
@@ -32,51 +36,205 @@ header .nav {
 }
 
 header .nav a {
-    text-decoration: none;
-    word-spacing: .5rem;
-    letter-spacing: .1rem;
+  text-decoration: none;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
 }
 
 header .nav a:hover {
-    color: #EAF205;
+  color: #eaf205;
 }
 
 .nav-left {
-    position: relative;
+  position: relative;
 }
 
 .nav-left a {
-    color: #07F2F2; 
+  color: #07f2f2;
 }
 
 .nav-right {
-    position: relative;
+  position: relative;
 }
 
 .nav-right a {
-    color: #F2055C;
+  color: #f2055c;
 }
 
+/* hero content  */
+
 .hero {
-    background-color: #05F26C;
-    display: flex;
-    justify-content: space-between;
+  /* background-color: #05F26C; */
+  background-color: #f2055c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .hero .icon img {
-    width: 300px;
+  width: 300px;
 }
 
 .hero span {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
+/* locations  */
+
+.locations-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.locations-header .stripes {
+  background-color: #05F26C;
+}
+
+.location-content img {
+  width: 25rem;
+}
 
 /* events  */
-
 .pix img {
-    width: 300px;
-    height: 500px;
-    opacity: .8;
-    border-radius: 15px;
+  width: 400px;
+  height: 600px;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+
+.events-content {
+  display: flex;
+  justify-content: center;
+}
+
+#contentlogo {
+  width: 25rem;
+}
+
+.stripes {
+  background-color: #f2055c;
+  width: 35%;
+  height: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.schedule {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.featured {
+  width: 360px;
+  height: 640px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.featured p {
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.feat-one {
+  background-image: url(/img/pitch1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.feat-two {
+  background-image: url(/img/pitch2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.feat-three {
+  background-image: url(/img/pitch3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.feat-four {
+  background-image: url(/img/pitch4.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.feat-five {
+  background-image: url(/img/pitch5.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.matchups {
+  display: flex;
+  justify-content: space-between;
+}
+
+.matchups p {
+  position: relative;
+  top: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.matchups img {
+  width: 7.75rem;
+  opacity: 0.9;
+}
+
+#mancity {
+  width: 115px;
+  height: 115px;
+  position: relative;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+#chelsea {
+  width: 115px;
+  height: 115px;
+  position: relative;
+  right: 0.5rem;
+  top: 0.1rem;
+}
+
+/* membership  */
+
+.membership-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.membership-header .stripes {
+  background-color: #07f2f2;
+}
+
+.membership-content img {
+  width: 30rem;
+}
+
+/* about us  */
+
+.about-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-header .stripes {
+  background-color: #eaf205;
+}
+
+.about-content img {
+  width: 20rem;
 }
