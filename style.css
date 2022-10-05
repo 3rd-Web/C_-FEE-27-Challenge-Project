@@ -13,20 +13,23 @@ h1 {
 
 header {
   background-color: #340040;
+  border-radius: 0.2rem;
+  height: 16rem;
 }
 
 header .container {
   display: flex;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
   font-family: "Rajdhani", sans-serif;
   width: 100%;
   justify-content: space-around;
 }
 
 header img {
-  width: 300px;
-  height: 300px;
-  display: flex;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  left: 0.3rem;
 }
 
 header .nav {
@@ -58,17 +61,77 @@ header .nav a:hover {
 }
 
 .nav-right a {
-  color: #f2055c;
+  color: #07f2f2;
+}
+
+/* divider  */
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.divider img {
+  width: 15rem;
+  padding: 0 0.1rem;
+  position: relative;
+  right: 0.5rem;
+}
+
+#iconstripes {
+  background-color: #05f26c;
 }
 
 /* hero content  */
-
 .hero {
-  /* background-color: #05F26C; */
-  background-color: #f2055c;
-  color: white;
+  background-image: url(/img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  opacity: 0.95;
+  height: 30rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  opacity: 1;
+  letter-spacing: 0.03rem;
+  word-spacing: 0.1rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+  text-underline-offset: 1.5rem;
+  text-decoration-color:#f2055c;
+}
+
+.hero-content h1 span {
+  /* color: #f2055c; */
+  font-style: italic;
+  text-decoration: none;
+}
+
+.hero-content h2 {
+  font-size: 1.75rem;
+}
+
+.hero-content h2 span {
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .hero .icon img {
@@ -79,23 +142,58 @@ header .nav a:hover {
   text-decoration: underline;
 }
 
-/* locations  */
+.hero-content h2 .loud {
+  font-style: italic;
+}
 
+/* locations  */
 .locations-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 6rem;
 }
 
 .locations-header .stripes {
-  background-color: #05F26C;
+  background-color: #eaf205;
 }
 
 .location-content img {
   width: 25rem;
 }
 
+.bars {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 6rem;
+}
+
+.bars img {
+  border-radius: 2rem;
+  width: 28rem;
+}
+
+.bars-content {
+  text-align: center;
+}
+
+.bars-content h2 {
+  letter-spacing: 0.08rem;
+  font-size: 2rem;
+}
+
+.bars-content p {
+  font-size: 1.3rem;
+}
+
 /* events  */
+.events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
 .pix img {
   width: 400px;
   height: 600px;
@@ -119,17 +217,11 @@ header .nav a:hover {
   border-radius: 1.5rem;
 }
 
-.events-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
 .schedule {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-bottom: 7rem;
 }
 
 .featured {
@@ -154,12 +246,12 @@ header .nav a:hover {
 }
 
 .feat-two {
-  background-image: url(/img/pitch2.jpg);
+  background-image: url(/img/pitch3.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .feat-three {
-  background-image: url(/img/pitch3.jpg);
+  background-image: url(/img/pitch2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -213,6 +305,7 @@ header .nav a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 7rem;
 }
 
 .membership-header .stripes {
@@ -221,6 +314,39 @@ header .nav a:hover {
 
 .membership-content img {
   width: 30rem;
+}
+
+.benefits {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 7rem 0;
+}
+
+.benefits-content {
+  text-align: center;
+  width: 100%;
+}
+
+.benefits-content i {
+  opacity: .85;
+}
+
+.benefits-content h2 {
+  font-size: 2rem;
+  word-spacing: .05rem;
+  letter-spacing: .05rem;
+}
+
+.benefits-content p {
+  font-size: 1.3rem;
+}
+
+.benefits-description {
+  margin-bottom: 7rem;
+}
+
+.benefits-content span {
+  font-style: italic;
 }
 
 /* about us  */
@@ -232,7 +358,7 @@ header .nav a:hover {
 }
 
 .about-header .stripes {
-  background-color: #eaf205;
+  background-color: #340040;
 }
 
 .about-content img {
