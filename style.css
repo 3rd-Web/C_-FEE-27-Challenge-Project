@@ -19,10 +19,31 @@ header {
 
 header .container {
   display: flex;
+  align-items: center;
   font-size: 2.5rem;
   font-family: "Rajdhani", sans-serif;
   width: 100%;
   justify-content: space-around;
+}
+
+.content-left .nav-left {
+  display: flex;
+  padding-left: 1.5rem;
+  position: relative;
+  left: 1rem;
+}
+
+.content-right .nav-right {
+  display: flex;
+  padding-right: 1.5rem;
+  position: relative;
+  right: 1rem;
+}
+
+.content-center {
+  position: relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 header img {
@@ -166,6 +187,7 @@ header .nav a:hover {
   display: flex;
   justify-content: space-around;
   margin-bottom: 6rem;
+  flex-wrap: wrap;
 }
 
 .bars img {
@@ -175,6 +197,7 @@ header .nav a:hover {
 
 .bars-content {
   text-align: center;
+  padding: 0.15rem;
 }
 
 .bars-content h2 {
@@ -232,6 +255,10 @@ header .nav a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .featured p {
@@ -241,29 +268,18 @@ header .nav a:hover {
 
 .feat-one {
   background-image: url(/img/pitch1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
-
 .feat-two {
   background-image: url(/img/pitch3.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .feat-three {
   background-image: url(/img/pitch2.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .feat-four {
   background-image: url(/img/pitch4.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 .feat-five {
   background-image: url(/img/pitch5.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .matchups {
@@ -310,7 +326,7 @@ header .nav a:hover {
 
 .membership-header .stripes {
   background-color: #340040;
-  opacity: .75;
+  opacity: 0.75;
 }
 
 .membership-content img {
@@ -377,7 +393,6 @@ header .nav a:hover {
   width: 100%;
 }
 
-
 /* footer  */
 
 footer {
@@ -392,4 +407,175 @@ footer {
 
 footer img {
   width: 300px;
+}
+
+/* *** RESPONSIVENESS ***  */
+
+
+/* horizontal nav bar for screens >769 pixels  */
+@media only screen and (min-width: 769px) {
+  header .content-left, header .content-right {
+    display: flex;
+  }
+}
+
+/* tablet landscape  */
+@media only screen and (max-width: 1024px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  header .container {
+    font-size: 1.8rem;
+  }
+
+  header img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .content-left .nav-left {
+    padding-left: 1rem;
+    position: relative;
+    left: 1rem;
+  }
+  
+  .content-right .nav-right {
+    padding-right: 1rem;
+    position: relative;
+    right: 1rem;
+  }
+  
+  .content-center {
+    position: relative;
+    margin-left: .5rem;
+    margin-right: .5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    text-underline-offset: .8rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.3125rem;
+  }
+
+  .bars img {
+    width: 22rem;
+  }
+
+  .featured {
+    width: 324px;
+    height: 576px;
+  }
+
+  .benefits-content h2 {
+    font-size: 1.5rem;
+    word-spacing: 0.05rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .benefits-content p {
+    font-size: 1.1rem;
+  }
+}
+
+/* tablet optimization  */
+@media only screen and (max-width: 768px) {
+  header .container {
+    font-size: 1.3rem;
+  }
+
+  header img {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    top: .5rem;
+    padding: 1rem;
+  }
+
+  .content-left .nav-left, .content-right .nav-right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: .5rem;
+  }
+  
+  .content-right .nav-right {
+    padding: 0;
+    position: relative;
+    right: 1rem;
+  }
+
+  .divider img {
+    width: 12rem;
+  }
+
+  .bars-content {
+    padding: 1.5rem;
+  }
+
+  .bars img {
+    width: 100%;
+  }
+
+  .featured {
+    width: 640px;
+    height: 360px;
+    background-size: cover;
+  }
+
+  .featured p {
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .membership-content img {
+    width: 25rem;
+  }
+}
+
+/* mobile phones  */
+@media only screen and (max-width: 480px) {
+  header .container {
+    font-size: 1.3rem;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .divider img {
+    width: 10rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    text-underline-offset: .5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+
+
+  .location-content img {
+    width: 20rem;
+  }
+
+  #contentlogo {
+    width: 20rem;
+  }
+
+  .membership-content img {
+    width: 20rem;
+  }
+
+  .about-content img {
+    width: 18rem;
+  }
+
 }
