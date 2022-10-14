@@ -23,21 +23,18 @@ header .container {
   font-size: 2.5rem;
   font-family: "Rajdhani", sans-serif;
   width: 100%;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .content-left .nav-left {
   display: flex;
   padding-left: 1.5rem;
-  position: relative;
-  left: 1rem;
 }
 
 .content-right .nav-right {
   display: flex;
   padding-right: 1.5rem;
   position: relative;
-  right: 1rem;
 }
 
 .content-center {
@@ -217,19 +214,19 @@ header .nav a:hover {
   margin-bottom: 5rem;
 }
 
-.pix img {
+/* .pix img {
   width: 400px;
   height: 600px;
   opacity: 0.8;
   border-radius: 15px;
-}
+} */
 
 .events-content {
   display: flex;
   justify-content: center;
 }
 
-#contentlogo {
+.events-content img {
   width: 25rem;
 }
 
@@ -336,7 +333,7 @@ header .nav a:hover {
 .benefits {
   display: flex;
   justify-content: space-evenly;
-  margin: 7rem 0;
+  margin: 7rem 0 5rem 0;
 }
 
 .benefits-content {
@@ -411,12 +408,16 @@ footer img {
 
 /* *** RESPONSIVENESS ***  */
 
-
 /* horizontal nav bar for screens >769 pixels  */
 @media only screen and (min-width: 769px) {
-  header .content-left, header .content-right {
+  header .content-left,
+  header .content-right {
     display: flex;
   }
+  /* header .container {
+    display: flex;
+    justify-content: space-evenly;
+  } */
 }
 
 /* tablet landscape  */
@@ -431,31 +432,35 @@ footer img {
   }
 
   header img {
-    width: 200px;
-    height: 200px;
+    width: 225px;
+    height: 225px;
   }
 
   .content-left .nav-left {
     padding-left: 1rem;
     position: relative;
-    left: 1rem;
+    left: 0.2rem;
   }
-  
+
   .content-right .nav-right {
     padding-right: 1rem;
     position: relative;
-    right: 1rem;
+    right: 0.2rem;
   }
-  
+
   .content-center {
     position: relative;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .divider img {
+    width: 13rem;
   }
 
   .hero-content h1 {
     font-size: 2.2rem;
-    text-underline-offset: .8rem;
+    text-underline-offset: 0.8rem;
   }
 
   .hero-content h2 {
@@ -486,31 +491,45 @@ footer img {
 @media only screen and (max-width: 768px) {
   header .container {
     font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
   }
 
   header img {
     width: 180px;
     height: 180px;
     position: relative;
-    top: .5rem;
+    top: 0.5rem;
+    left: 0em;
+    right: 0.5rem;
     padding: 1rem;
   }
 
-  .content-left .nav-left, .content-right .nav-right {
+  .content-left .nav-left,
+  .content-right .nav-right {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     position: relative;
-    top: .5rem;
+    top: 0.5rem;
   }
-  
+
   .content-right .nav-right {
     padding: 0;
     position: relative;
     right: 1rem;
+    justify-content: start;
   }
 
   .divider img {
-    width: 12rem;
+    width: 10rem;
+  }
+
+  .locations-header {
+    margin-bottom: 3rem;
+  }
+
+  .bars {
+    margin-bottom: 3rem;
   }
 
   .bars-content {
@@ -532,9 +551,30 @@ footer img {
     letter-spacing: 0.1rem;
   }
 
+  .schedule {
+    margin-bottom: 5rem;
+  }
+
   .membership-content img {
     width: 25rem;
   }
+
+  .benefits {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .benefits-content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .benefits-inner-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
 }
 
 /* mobile phones  */
@@ -549,21 +589,47 @@ footer img {
   }
 
   .divider img {
-    width: 10rem;
+    width: 8rem;
+  }
+
+  .hero {
+    margin: 0%;
+    padding: 0 0.5rem;
   }
 
   .hero-content h1 {
     font-size: 2rem;
-    text-underline-offset: .5rem;
+    text-underline-offset: 0.5rem;
   }
 
   .hero-content h2 {
     font-size: 1.2rem;
   }
 
+  .locations-header {
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+  }
 
   .location-content img {
-    width: 20rem;
+    width: 15rem;
+    margin: 0;
+  }
+
+  .bars {
+    margin-bottom: 2rem;
+  }
+
+  .events-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .events-content img {
+    width: 15rem;
+  }
+
+  .featured {
+    margin-bottom: 1rem;
   }
 
   #contentlogo {
@@ -574,8 +640,53 @@ footer img {
     width: 20rem;
   }
 
+  .benefits-content h2 {
+    font-size: 1.2rem;
+    word-spacing: 0%;
+    letter-spacing: 0em;
+  }
+
+  .bars-content p {
+    font-size: 1rem;
+  }
+
   .about-content img {
     width: 18rem;
   }
 
+  .third {
+    margin: 9rem 0;
+  }
+}
+
+/* iPhone 13 Pro (390px) - iPhone SE (375px) optimization  */
+@media only screen and (max-width: 390px) {
+  header .container {
+    font-size: 1.2rem;
+  }
+
+  .content-center {
+    margin-right: 1.1rem;
+  }
+
+  header img {
+    width: 170px;
+    height: 170px;
+    padding: 0%;
+    margin-bottom: 2rem;
+  }
+
+  header .nav a {
+    word-spacing: 0.1rem;
+    letter-spacing: 0em;
+  }
+
+  .hero-content h1 {
+    font-size: 1.75rem;
+    text-underline-offset: 0.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.1rem;
+  }
 }
